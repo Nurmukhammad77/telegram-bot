@@ -2,7 +2,7 @@ services:
   - type: worker
     name: telegram-ytdlp-bot
     runtime: docker
-    plan: free
+    plan: starter
     dockerfilePath: ./Dockerfile
     autoDeploy: true
     envVars:
