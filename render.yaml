@@ -1,0 +1,10 @@
+services:
+  - type: worker
+    name: telegram-ytdlp-bot
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    autoDeploy: true
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
